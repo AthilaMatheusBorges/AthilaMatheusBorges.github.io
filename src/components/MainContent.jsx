@@ -5,6 +5,7 @@ import AboutContainer from './AboutContainer'
 import TechnologiesContainer from './TechnologiesContainer'
 import ProjectsContainer from './ProjectsContainer'
 import AcademyContainer from './AcademyContainer'
+import ExperienceContainer from './ExperienceContainer'
 
 const MainContent = () => {
   return (
@@ -12,6 +13,7 @@ const MainContent = () => {
       <AboutContainer />
       <TechnologiesContainer />
       <ProjectsContainer />
+      <ExperienceContainer/>
       <AcademyContainer />
     </main>
   )

@@ -9,6 +9,7 @@
         flex-direction: row
         gap: 1.5rem
         margin-bottom: 2rem
+        flex-wrap: wrap
 
         .project-card
             display: flex
@@ -58,7 +59,7 @@
                     margin: 1rem 0
                     font-size: 1.5rem
                     text-align: center
-                
+
                 .icons
                     display: flex
 
@@ -69,7 +70,6 @@
                         border-radius: variables.$card-border-radius
                         margin: 0 5px
 
-
         #card:hover
             transform: scale(1.05)
             transition: .2s
@@ -78,6 +78,71 @@
                 opacity: 1
                 transition: 0.2s
 
-        @media screen and (max-width: 767px) 
+        @media screen and (max-width: 767px)
             .project-card
                 height: 150px
+
+.modal
+    background-color: #f0f0f0
+    border-radius: 10px
+    padding: 2rem
+    display: flex
+    flex-direction: column
+    gap: 1rem
+
+    @media screen and (max-width: 767px)
+        width: 80% !important
+
+    h2
+        color: variables.$text-color-title
+        margin-bottom: 1rem
+    .icons
+        display: flex
+        justify-content: center
+        margin-bottom: 1rem
+
+        svg
+            font-size: 2.5rem
+            color: rgba(74, 89, 137, 1)
+            background-color: rgb(255, 255, 255, 70%)
+            border-radius: variables.$card-border-radius
+            margin: 0 5px
+
+    img
+        width: 70%
+        align-self: center
+
+        @media screen and (max-width: 767px)
+            width: 100%
+
+    a
+        color: white
+        text-align: center
+        text-decoration: none
+        font-size: 1rem
+        background-color: variables.$text-color-title
+        transition: 0.2s
+        padding: 1rem
+        font-weight: bold
+        border-radius: variables.$container-border-radius
+
+        &:hover
+            color: variables.$text-color-secundary
+            transition: 0.2s
+
+    button
+        border: none
+        color: black
+        text-align: center
+        text-decoration: none
+        font-size: 1rem
+        background-color: rgb(252, 73, 73)
+        transition: 0.2s
+        padding: 0.5rem
+        cursor: pointer
+        font-weight: bold
+        border-radius: variables.$container-border-radius
+
+        &:hover
+            color: variables.$text-color-secundary
+            transition: 0.2s
